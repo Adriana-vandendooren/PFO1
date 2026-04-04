@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio Personal</title>
+  <!-- Enlace a Google Fonts: se eligió Roboto por su legibilidad en pantalla -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ==========
+       Contiene el nombre/logo del sitio y el encabezado principal.
+       Mejora futura: agregar un logo SVG animado en lugar de texto plano. -->
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="logo">&lt;.&gt;</span>
+      <h1 class="header-title">Adriana Van Den Dooren</h1>
+      <p class="header-subtitle">Co-fundadora Educando</p>
+    </div>
+  </header>
+
+  <!-- ========== NAV ==========
+       Barra de navegación con 5 enlaces a las secciones principales.
+       Mejora futura: convertir en un menú hamburguesa para móviles con JS. -->
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+      <li><a href="#tarjetas" class="nav-link">Proyectos</a></li>
+      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      <li><a href="#peliculas" class="nav-link">Películas</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ========== SECCIÓN SOBRE MÍ ==========
+         Presentación personal con imagen de avatar y descripción.
+         Mejora futura: animar la entrada del texto con scroll-triggered animations. -->
+    <section id="sobre-mi" class="section sobre-mi-section">
+      <div class="sobre-mi-content">
+        <div class="avatar-wrapper">
+          <img
+            src="img/mi-foto.jpg"
+            alt="Foto de perfil de Adriana Van Den Dooren"
+            class="avatar-img"
+          />
+        </div>
+        <div class="sobre-mi-text">
+          <h2 class="section-title">Sobre mí</h2>
+          <p>
+            Soy Consultora y Capacitadora en Formación Profesional, especializada en el diseño,
+            implementación y dictado de programas de capacitación en competencias digitales y tecnologías
+            aplicadas al trabajo.
+            Poseo más de 25 años de experiencia diseñando e implementando programas de capacitación
+            digital para empresas, instituciones educativas y organizaciones que necesitan mejorar las
+            habilidades digitales de sus equipos, optimizar procesos y adaptarse a los nuevos entornos de
+            trabajo remoto y colaboración online.
+            Soy cofundadora de Educando.net, una plataforma 100% online en proceso de implementación,
+            creada para ofrecer formación sincrónica y asincrónica en informática aplicada, programación
+            básica y competencias digitales clave para el entorno laboral actual.
+            Actualmente curso una Licenciatura en Ciberdefensa y una Tecnicatura Superior en Desarrollo de
+            Software, lo que fortalece mi perfil técnico-pedagógico y me permite acompañar procesos de
+            transformación digital en el ámbito educativo y corporativo, aportando una mirada actualizada y
+            estratégica a cada proyecto de capacitación.
+            Mi objetivo es seguir aportando valor a proyectos de capacitación, actualización de competencias
+            digitales e implementación de estrategias educativas virtuales con enfoque práctico y orientado a
+            resultados, incorporando herramientas innovadoras como la inteligencia artificial educativa.
+          </p>
+          
+          <a href="#contacto" class="btn btn-primary">Hablemos 👋</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN TARJETAS / PROYECTOS ==========
+         Muestra proyectos con imagen, título y descripción en columnas con Flexbox.
+         Mejora futura: cargar los proyectos dinámicamente desde un JSON con fetch(). -->
+    <section id="tarjetas" class="section tarjetas-section">
+      <h2 class="section-title center">Mis Proyectos</h2>
+      <div class="tarjetas-grid">
+
+        <article class="card">
+          <img
+            src= img/proyecto1.jpg
+            alt="Educando logo"
+            class="card-img"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Educando.net.ar</h3>
+            <p class="card-text">
+              Educando es una plataforma de cursos relacionados con la informática
+            </p>
+            <a href="#" class="btn btn-secondary">Ver proyecto →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src=img/proyecto2.jpg
+            alt="Imagen del curso empleabilidad"
+            class="card-img"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Curso empleabilidad</h3>
+            <p class="card-text">
+              Curso destinado a personas que deseen incorporarse al mundo laboral actual.
+            </p>
+            <a href="#" class="btn btn-secondary">Ver proyecto →</a>
+          </div>
+        </article>
+
+        
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN HABILIDADES ==========
+         Tabla de tecnologías conocidas, a aprender y hobbies. -->
+    <section id="habilidades" class="section habilidades-section">
+      <h2 class="section-title center">Habilidades</h2>
+      <div class="habilidades-wrapper">
+        <table class="skills-table">
+          <thead>
+            <tr>
+              <th>✅ Tecnologías que manejo</th>
+              <th>📚 Quiero aprender</th>
+              <th>🎮 Hobbies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML5</td>
+              <td>React.js</td>
+              <td>Actividades al aire libre</td>
+            </tr>
+            <tr>
+              <td>Python </td>
+              <td>Node.js</td>
+              <td>Viajar</td>
+            </tr>
+            <tr>
+              <td>Git &amp; GitHub</td>
+              <td>Integración IA</td>
+              <td>Peliculas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN CONTACTO ==========
+         Formulario con campos obligatorios.  -->
+    <section id="contacto" class="section contacto-section">
+      <h2 class="section-title center">Contacto</h2>
+      <p class="center contacto-intro">¿Tenés un proyecto en mente? ¡Escribime!</p>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+54 11 1234-5678" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contame sobre tu proyecto..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Enviar mensaje ✉️</button>
+      </form>
+    </section>
+
+    <!-- ========== SECCIÓN PELÍCULAS FAVORITAS ==========
+         Tres mejores películas con imagen, título y descripción personal. -->
+    <section id="peliculas" class="section peliculas-section">
+      <h2 class="section-title center">Mis Películas Favoritas</h2>
+      <div class="peliculas-grid">
+
+        <article class="pelicula-card">
+          <div class="pelicula-img-wrapper">
+            <img
+              src=img/startrek.jpg
+              alt="Póster de Star Trek"
+              class="pelicula-img"
+            />
+            <span class="pelicula-rank">#1</span>
+          </div>
+          <div class="pelicula-info">
+            <h3>Star Trek</h3>
+            <p class="pelicula-director">	Gene Roddenberry · 1966</p>
+            <p>Viajes de la nave espacial USS Enterprise, una nave de exploración construida por la Federación Unida de Planetas en el siglo XXIII, su misión: explorar nuevos y extraños mundos. </p>
+          </div>
+        </article>
+
+        <article class="pelicula-card">
+          <div class="pelicula-img-wrapper">
+            <img
+              src=img/alien.jpg
+              alt="Póster de Alien"
+              class="pelicula-img"
+            />
+            <span class="pelicula-rank">#2</span>
+          </div>
+          <div class="pelicula-info">
+            <h3>Alien</h3>
+            <p class="pelicula-director">Ridley Scott · 1979</p>
+            <p>Cuando un barco mercante espacial percibe una transmisión desconocida como una llamada de socorro, un miembro de la tripulación es atacado por una misteriosa forma de vida.</p>
+          </div>
+        </article>
+
+        <article class="pelicula-card">
+          <div class="pelicula-img-wrapper">
+            <img
+              src=img/terminator.jpg
+              alt="Póster de Terminator"
+              class="pelicula-img"
+            />
+            <span class="pelicula-rank">#3</span>
+          </div>
+          <div class="pelicula-info">
+            <h3>Terminator</h3>
+            <p class="pelicula-director">James Cameron · 1985</p>
+            <p>Un ciborg asesino enviado a través del tiempo, desde el año 2029 hasta 1984, para asesinar a Sarah Connor</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ==========
+       Información de contacto y enlaces a redes sociales.
+       Mejora futura: agregar íconos SVG de cada red social en lugar de texto. -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-name">Adriana Van Den Dooren · Desarrollador Web</p>
+      <nav class="footer-nav" aria-label="Redes sociales">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer-link">Vercel</a>
+        </nav>
+      <p class="footer-copy">© 2026 Adriana. Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
