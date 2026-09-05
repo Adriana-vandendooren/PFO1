@@ -95,7 +95,7 @@ pfo1-portafolio/
 
 ---
 
-### ♿ Consideraciones Adicionales
+### ♿ Consideraciones Adicionales 
 
 - [x] El diseño es responsivo y se visualiza correctamente en distintos dispositivos (mobile, tablet, desktop).
 - [x] Se aplicaron buenas prácticas de accesibilidad: atributos `alt` descriptivos en todas las imágenes, uso de `<nav>` con `aria-label`, estructura semántica correcta (`header`, `main`, `footer`, `section`, `article`).
